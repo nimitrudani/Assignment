@@ -1,1 +1,1 @@
-# QED42_Assignment
+# Assignment
