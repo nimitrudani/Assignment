@@ -1,0 +1,373 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-04-27T04:46:12.951Z",
+        "line": 5,
+        "name": "Scenario 1 - AG grid operations",
+        "description": "",
+        "id": "assignment-for-qed42;scenario-1---ag-grid-operations",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11192132900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "\"chrome\" browser is open",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"chrome\"",
+                  "offset": 0
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.browser_is_open(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6842668200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user navigates to \"https://generic-ui.com/demo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://generic-ui.com/demo\"",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.user_navigates_to(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 910943700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user selects \"100\" from drop-down",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"100\"",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.user_selects_from_drop_down(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 154810100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is able to see \"100\" rows in the grid table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"100\"",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.user_is_able_to_see_rows_in_the_grid_table(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 19151800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "get the below data from grid where project status is active",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.get_the_below_data_from_grid_where_project_status_is_active(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Project Name"
+                ]
+              },
+              {
+                "cells": [
+                  "Project Id"
+                ]
+              },
+              {
+                "cells": [
+                  "Progress %"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 682346000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user close the browser",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.user_close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@qed42_assignment"
+          },
+          {
+            "name": "@scenario1"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-27T04:46:32.922Z",
+        "line": 17,
+        "name": "Scenario 2 - Price Comparision b/w filpkart and amazon",
+        "description": "",
+        "id": "assignment-for-qed42;scenario-2---price-comparision-b/w-filpkart-and-amazon",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3834904700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "\"chrome\" browser is open",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"chrome\"",
+                  "offset": 0
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.browser_is_open(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11351955700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user navigates to \"https://www.flipkart.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.flipkart.com\"",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.user_navigates_to(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10241987900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user search for \"APPLE iPhone 13 (Starlight, 256 GB)\" on \"flipkart\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"APPLE iPhone 13 (Starlight, 256 GB)\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"flipkart\"",
+                  "offset": 57
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.user_search_for_on_flipkart(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 322019700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user is  able to see price of that item on \"flipkart\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"flipkart\"",
+                  "offset": 43
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.user_is_able_to_see_price_of_that_item_on_flipkart(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1152176500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user close the browser",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.user_close_the_browser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6429929700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "\"chrome\" browser is open",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"chrome\"",
+                  "offset": 0
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.browser_is_open(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7220103500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user navigates to \"https://www.amazon.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.amazon.com/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.user_navigates_to(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10061381100,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "change the display price to INR",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.change_the_display_price_to_inr()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15657041000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user search for \"APPLE iPhone 13 (Starlight, 256 GB)\" on \"amazon\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"APPLE iPhone 13 (Starlight, 256 GB)\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"amazon\"",
+                  "offset": 57
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.user_search_for_on_flipkart(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 809955300,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user is  able to see price of that item on \"amazon\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"amazon\"",
+                  "offset": 43
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.user_is_able_to_see_price_of_that_item_on_flipkart(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000100,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user compares the price and print the result",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.user_compares_the_price_and_print_the_result()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 803950700,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user close the browser",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.user_close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@qed42_assignment"
+          },
+          {
+            "name": "@scenario2"
+          }
+        ]
+      }
+    ],
+    "name": "Assignment for QED42",
+    "description": "",
+    "id": "assignment-for-qed42",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": [
+      {
+        "name": "@qed42_assignment",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
